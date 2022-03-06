@@ -43,7 +43,15 @@ Dot2D a = new Dot2D();
 Console.Write("Генерируются координаты точки... ");
 a = Get2DRandomDot();
 Console.WriteLine("{0}; {1}",a.X, a.Y);
-Console.WriteLine(GetMinAngle(a));
+if (a.X == 0 & a.Y == 0)
+{
+    Console.WriteLine("Точка совпадает с началом координат");
+}
+else
+{
+    Console.WriteLine(GetMinAngle(a));
+}
+
 }
 catch(Exception ex)
 {

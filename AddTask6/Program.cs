@@ -10,6 +10,9 @@ string GetPassword(int passLength)
     int symb = 0;
     do
     {
+        num = false;
+        ch = false;
+        spechial = false;
         for (int i = 0; i < passLength; i++)
         {
             symb = new Random().Next(33, 127);
